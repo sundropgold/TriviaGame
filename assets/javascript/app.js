@@ -141,8 +141,14 @@ $(document).ready(function(){
 		console.log("correct answers: " + correctA);
 		console.log("user answers: " + userA);
 
-		for (var i = 0; i < userA.length; i++) {
-			
+		for (var i = 0; i < correctA.length; i++) {
+	
+			if (userA[i] == "" || userA[i] == null) {
+				unanswered++;
+			}
+
+			console.log("unanswered: " + unanswered);
+
 			if(userA[i] == correctA[i]) {
 				correct++;
 			} 
@@ -150,11 +156,11 @@ $(document).ready(function(){
 			console.log(userA[i] + " " + correctA[i]);
 			console.log("correct: " + correct);
 
-			if (userA[i] != correctA[i]) {
+			if (userA[i] != correctA[i] && userA[i] != "" && userA[i] != null) {
 				incorrect++;
 			}
 			console.log("incorrect: " + incorrect);
-		
+
 		}
 
 		// update score
