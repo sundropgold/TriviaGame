@@ -149,6 +149,11 @@ $(document).ready(function(){
 
 			console.log(userA[i] + " " + correctA[i]);
 			console.log("correct: " + correct);
+
+			if (userA[i] != correctA[i]) {
+				incorrect++;
+			}
+			console.log("incorrect: " + incorrect);
 		
 		}
 
