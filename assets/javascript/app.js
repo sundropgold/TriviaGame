@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var intervalID;
 
 	// countdown variable at the start
-	var timerStart = 100;
+	var timerStart = 50;
 
 	// time we're counting down to
 	var timerEnd = 0;
