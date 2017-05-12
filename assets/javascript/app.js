@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var intervalID;
 
 	// countdown variable at the start
-	var timerStart = 5;
+	var timerStart = 100;
 
 	// time we're counting down to
 	var timerEnd = 0;
@@ -25,6 +25,8 @@ $(document).ready(function(){
 		
 		// make the start button disappear
 		$('#startBTN').hide();
+
+		$('#shrek').hide();
 
 		$("#timer").html("<h3>" + timerStart + " seconds left</h3>");
 
@@ -64,6 +66,8 @@ $(document).ready(function(){
 		$('#trivia').hide();
 
 		$('#startBTN').hide();
+
+		$('#shrek').hide();
 
 		console.log("finished");
 
@@ -149,7 +153,8 @@ $(document).ready(function(){
 		}
 
 		// update score
-		$('div#results').html("<h2>Correct: " + correct + "</h2>" + 
+		$('div#results').html("<img id='results' src='assets/images/results.png' />" +
+							"<h2>Correct: " + correct + "</h2>" + 
 							"<h2>Incorrect: " + incorrect + "</h2>" + 
 							"<h2>Unanswered: " + unanswered + "</h2>"
 							);

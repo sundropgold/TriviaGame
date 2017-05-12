@@ -15,43 +15,50 @@
 		<!-- CUSTOM CSS -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+		<!-- GOOGLE FONT -->
+		<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Montserrat" rel="stylesheet">
+
 	</head>
 
 	<body>
 
 		<div class="container" id="title">
 
-			<div class="row">
-				<div class="col-sm-12">	
+			<div class="row" id="triviaTitle">
+				<div class="col-lg-2"></div>
+				<div class="col-sm-8">	
 					<h1>Shrektastic Trivia</h1>
 					<hr>
 					<div id="timer"></div>
 				</div>
+				<div class="col-lg-2"></div>
 			</div>
 
 		</div>
 
 		<div class="container" id="start">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-3 col-md-5 col-lg-5"></div>
+				<div class="col-sm-6 col-md-2 col-lg-2">
+
+					<img id="shrek" src="assets/images/shrek.png"/>
+
 					<input class="btn btn-default" id="startBTN" value="submit"/>
 				</div>
+				<div class="col-sm-3 col-md-5 col-lg-5"></div>
 			</div>
 		</div>
 
 		<div class="container">
 
 			<div class="row">
-				<div class="col-sm-12" id="results">
+				<div class="col-lg-3"></div>
+				<div class="col-sm-6" id="results">
 				</div>
+				<div class="col-lg-3"></div>
 			</div>
 
 		</div>
-
-				<div class="container" id="trivia">
-				
-
-			<form>
 
 		<div class="container" id="trivia">
 				
@@ -59,13 +66,13 @@
 			<form>
 			
 				<fieldset class="form-group row" id="trivia1">
-					<legend class="col-form-legend col-sm-4">
+					<legend class="col-form-legend col-sm-6">
 						<h3>Question One</h4>
 						<br/>
 						<p>Which song is not featured in Shrek 2?</p>
 					</legend>
 					
-					<div class="col-sm-8">
+					<div class="col-sm-6">
 						<div class="form-check">
 							<label class="form-check-label">
 								<input class="form-check-input Q1" type="radio" name="gridRadios" id="Q1A" value="A">
@@ -104,14 +111,16 @@
 					</div>
 				</fieldset>
 
+				<hr>
+
 				<fieldset class="form-group row" id="trivia2">
-					<legend class="col-form-legend col-sm-4">
+					<legend class="col-form-legend col-sm-6">
 						<h3>Question Two</h4>
 						<br/>
 						<p>Finish this quote: "Hey I'm no one's messenger boy, all right I'm -"</p>
 					</legend>
 					
-					<div class="col-sm-8">
+					<div class="col-sm-6">
 						<div class="form-check">
 							<label class="form-check-label">
 								<input class="form-check-input Q2" type="radio" name="gridRadios2" id="Q2A" value="A">
@@ -132,7 +141,6 @@
 								your knight in shining armor.
 							</label>
 						</div>
-					</div>
 
 					<div class="form-check">
 						<label class="form-check-label">
@@ -148,16 +156,20 @@
 						</label>
 					</div>
 
+					</div>
+
 				</fieldset>
 
+				<hr>
+
 				<fieldset class="form-group row" id="trivia3">
-					<legend class="col-form-legend col-sm-4">
+					<legend class="col-form-legend col-sm-6">
 						<h3>Question Three</h4>
 						<br/>
 						<p>From who did Fiona get her fighting skills?</p>
 					</legend>
 					
-					<div class="col-sm-8">
+					<div class="col-sm-6">
 						<div class="form-check">
 							<label class="form-check-label">
 								<input class="form-check-input" type="radio" name="gridRadios3" id="Q3A" value="A">
@@ -196,14 +208,16 @@
 					</div>
 				</fieldset>
 
+				<hr>
+
 				<fieldset class="form-group row" id="trivia4">
-					<legend class="col-form-legend col-sm-4">
+					<legend class="col-form-legend col-sm-6">
 						<h3>Question Four</h4>
 						<br/>
 						<p>Donkey says that everybody loves:</p>
 					</legend>
 					
-					<div class="col-sm-8">
+					<div class="col-sm-6">
 						<div class="form-check">
 							<label class="form-check-label">
 								<input class="form-check-input" type="radio" name="gridRadios4" id="Q4A" value="A">
@@ -241,14 +255,16 @@
 					</div>
 				</fieldset>
 
+				<hr>
+
 				<fieldset class="form-group row" id="trivia5">
-					<legend class="col-form-legend col-sm-4">
+					<legend class="col-form-legend col-sm-6">
 						<h3>Question Five</h4>
 						<br/>
 						<p>When Lord Farquaad says "Mirror Mirror, on the wall, is this not the most perfect kingdom of them all?", who replies "Well, technically you're not a king."?</p>
 					</legend>
 					
-					<div class="col-sm-8">
+					<div class="col-sm-6">
 						<div class="form-check">
 							<label class="form-check-label">
 								<input class="form-check-input" type="radio" name="gridRadios5" id="Q5A" value="A">
@@ -288,11 +304,17 @@
 
 				</fieldset>
 
+				<hr>
+
 			</form>
 
-				<div class="row">
+			<div class="row">
+				<div class="col-sm-3 col-md-5 col-lg-5"></div>
+				<div class="col-sm-6 col-md-2 col-lg-2">
 					<input class="btn btn-default" id="submitBTN" value="submit"/>
 				</div>
+				<div class="col-sm-3 col-md-5 col-lg-5"></div>
+			</div>
 
 		</div>
 
